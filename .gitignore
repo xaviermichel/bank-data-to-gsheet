@@ -63,6 +63,7 @@ logback.xml
 *.xlsx
 *.versionsBackup
 credentials.json
+service-account.json
 ca-csv-credential.json
 data/
 
