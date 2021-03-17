@@ -18,7 +18,7 @@ log.info(`Getting data for user ${caUser}`);
 (async () => {
 
     const browser = await puppeteer.launch({
-        executablePath: '/bin/chromium',
+        //executablePath: '/usr/bin/chromium-browser',
         headless: true,
         slowMo: 250
     });
@@ -48,6 +48,10 @@ log.info(`Getting data for user ${caUser}`);
     await page.click('#validation');
 
     await page.waitForNavigation();
+
+    // popin vie privee
+    await pupeeteerUtils.clickByText(page, 'Tout accepter', 'button');
+    await page.waitFor(1000);
 
     log.info("Going on téléchargement page");
     await page.goto('https://www.credit-agricole.fr/ca-franchecomte/particulier/operations/operations-courantes/telechargement.html#!/');
