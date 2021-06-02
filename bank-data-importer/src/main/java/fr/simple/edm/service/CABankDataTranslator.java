@@ -1,6 +1,6 @@
 package fr.simple.edm.service;
 
-import fr.simple.edm.CAConfiguration;
+import fr.simple.edm.config.CAConfiguration;
 import fr.simple.edm.domain.AccountOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;

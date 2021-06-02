@@ -8,7 +8,7 @@ logging:
         fr.simple.edm: INFO
 
 ca:
-    csvFilePath: /tmp/export.CSV
+    csvFilePath: /data/export.CSV
     accountsLabel:
         - Compte personnel
         - Compte commun
@@ -16,7 +16,7 @@ ca:
 google:
     sheet:
         appName: Account Importer
-        credentialsFilePath: /credentials.json
+        credentialsFilePath: /conf/credentials.json
         tokenDirectoryPath: /tmp/tokens
         spreadsheetId: xxxxx-xxxxxxxxxx-xxxxxxx
         smartInsertSheet:
@@ -44,13 +44,13 @@ google:
             lastCol: 5
             lastRow: 100
         nextMonthSheet:
-            name: M+1
+            name: Mois suivant
             firstCol: A
             firstRow: 21
             lastCol: F
             lastRow: 100
         nextMonthSheetPaste:
-            name: M+1
+            name: Mois suivant
             firstCol: 0
             firstRow: 20
             lastCol: 5

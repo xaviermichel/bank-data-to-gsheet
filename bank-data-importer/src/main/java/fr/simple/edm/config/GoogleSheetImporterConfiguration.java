@@ -1,4 +1,4 @@
-package fr.simple.edm;
+package fr.simple.edm.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
