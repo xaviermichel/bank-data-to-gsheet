@@ -1,0 +1,1405 @@
+[
+  {
+    "name": "com.google.api.client.auth.oauth.OAuthAuthorizeTemporaryTokenUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth.OAuthCallbackUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.AuthorizationCodeResponseUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.AuthorizationCodeTokenRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.AuthorizationRequestUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.PasswordTokenRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.RefreshTokenRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.TokenErrorResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.TokenRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.oauth2.TokenResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.openidconnect.IdToken$Payload",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.auth.openidconnect.IdTokenResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeRequestUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeTokenRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleBrowserClientRequestUrl",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets$Details",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleIdToken$Payload",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.json.GoogleJsonError",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.json.GoogleJsonError$ErrorInfo",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.googleapis.json.GoogleJsonErrorContainer",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.http.HttpHeaders",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.json.GenericJson",
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.json.rpc2.JsonRpcRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.json.webtoken.JsonWebSignature$Header",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.json.webtoken.JsonWebToken$Header",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.json.webtoken.JsonWebToken$Payload",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.client.util.GenericData",
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.auth.oauth2.TokenVerifier$PublicKeyLoader$JsonWebKey",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.auth.oauth2.TokenVerifier$PublicKeyLoader$JsonWebKeySet",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.Sheets$Spreadsheets$Values$Clear",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.Sheets$Spreadsheets$Values$Update",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.Sheets$Spreadsheets$BatchUpdate",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.Sheets$Spreadsheets$Get",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.HistogramChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddFilterViewResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TextFormat",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateConditionalFormatRuleRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceColumn",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotGroupLimit",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateValuesByDataFilterResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDeveloperMetadataResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.MatchedValueRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TrimWhitespaceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DateTimeRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DuplicateSheetRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataValidationRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicChartAxis",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotGroup",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddDataSourceResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RandomizeRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddBandingResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ConditionValue",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotGroupSortValueBucket",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateSlicerSpecRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeveloperMetadataLocation",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateBandingRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BandingProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateEmbeddedObjectBorderRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.EmbeddedChart",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Interval",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartAxisViewWindowOptions",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateEmbeddedObjectPositionRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotGroupRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SourceAndDestination",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RowData",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TimeOfDay",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ValueRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TextFormatRun",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDeveloperMetadataResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.IterativeCalculationSettings",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateProtectedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ScorecardChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchGetValuesByDataFilterResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Spreadsheet",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateCellsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchClearValuesByDataFilterResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotValue",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Response",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SortRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Padding",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ColorStyle",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.NumberFormat",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.FilterSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TextPosition",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AppendCellsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDimensionRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GridProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Request",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SearchDeveloperMetadataResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchClearValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicChartDomain",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TextRotation",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.LineStyle",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataLabel",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ErrorValue",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.MatchedDeveloperMetadata",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataFilter",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateBordersRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateEmbeddedObjectPositionResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicFilter",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UnmergeCellsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddProtectedRangeResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DimensionGroup",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.KeyValueFormat",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDimensionGroupRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddProtectedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteConditionalFormatRuleRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SearchDeveloperMetadataRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceTable",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TreemapChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Link",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BaselineValueFormat",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDataSourceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateSpreadsheetResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AppendDimensionRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CutPasteRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotFilterSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceRefreshWeeklySchedule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchGetValuesByDataFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.InsertRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BigQueryQuerySpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BubbleChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteEmbeddedObjectRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ExtendedValue",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeveloperMetadata",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddDataSourceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CandlestickDomain",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateSheetPropertiesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RefreshDataSourceResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteFilterViewRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartGroupRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteNamedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchGetValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Editors",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchClearValuesByDataFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddChartResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateSpreadsheetPropertiesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceSheetDimensionRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateValuesByDataFilterResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DuplicateSheetResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.MergeCellsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.WaterfallChartCustomSubtotal",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddSlicerRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DimensionRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Sheet",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GradientRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddBandingRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BandedRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TreemapChartColorScale",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AppendValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteProtectedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PointStyle",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddFilterViewRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddConditionalFormatRuleRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DuplicateFilterViewRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CellFormat",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateValuesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceRefreshDailySchedule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CreateDeveloperMetadataResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.FindReplaceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.FilterView",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddSheetResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotGroupValueMetadata",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.MoveDimensionRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddDimensionGroupRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RefreshDataSourceObjectExecutionStatus",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicChartSeries",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceChartProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BigQueryDataSourceSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartDateTimeRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RepeatCellRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CopyPasteRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.EmbeddedObjectPosition",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartSourceRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SlicerSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CellData",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SpreadsheetProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDeveloperMetadataRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ManualRuleGroup",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateValuesByDataFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AutoResizeDimensionsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DimensionProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDeveloperMetadataRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataExecutionStatus",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDuplicatesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.FindReplaceResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicSeriesDataPointStyleOverride",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CreateDeveloperMetadataRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GridCoordinate",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.InsertDimensionRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.EmbeddedObjectBorder",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotTable",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchClearValuesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ManualRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Borders",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.InterpolationPoint",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddNamedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteSheetRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddSheetRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SetDataValidationRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.WaterfallChartColumnStyle",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddSlicerResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AutoFillRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BigQueryTableSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddDimensionGroupResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDimensionGroupRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateNamedRangeRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PasteDataRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.HistogramRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeveloperMetadataLookup",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteConditionalFormatRuleResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.OverlayPosition",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SetBasicFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceObjectReferences",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ProtectedRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ClearValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDataSourceResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddNamedRangeResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataFilterValueRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BooleanRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceRefreshMonthlySchedule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GridData",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DuplicateFilterViewResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BasicChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartHistogramRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CandlestickSeries",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GetSpreadsheetByDataFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateChartSpecRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Border",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.NamedRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ConditionalFormatRule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateConditionalFormatRuleResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDimensionGroupResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartData",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.AddChartRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.WaterfallChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceRefreshSchedule",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateValuesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TrimWhitespaceResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceParameter",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceObjectReference",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PivotFilterCriteria",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateDimensionPropertiesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.OrgChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceSheetProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDataSourceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.RefreshDataSourceRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.UpdateFilterViewRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SortSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.TextToColumnsRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Color",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CopySheetToAnotherSpreadsheetRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CandlestickChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ClearValuesRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteBandingRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.PieChartSpec",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.FilterCriteria",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DeleteDuplicatesResponse",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.WaterfallChartSeries",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSource",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BatchUpdateSpreadsheetRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ClearBasicFilterRequest",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SpreadsheetTheme",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ChartCustomNumberFormatOptions",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.GridRange",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.WaterfallChartDomain",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.Slicer",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.BooleanCondition",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceFormula",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.CandlestickData",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.ThemeColorPair",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.HistogramSeries",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.SheetProperties",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name": "com.google.api.services.sheets.v4.model.DataSourceColumnReference",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true
+  }
+]

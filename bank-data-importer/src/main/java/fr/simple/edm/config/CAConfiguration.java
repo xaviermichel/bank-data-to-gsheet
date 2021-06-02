@@ -1,20 +1,19 @@
-package fr.simple.edm;
-
-import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+package fr.simple.edm.config;
 
 import java.util.List;
 
-@Component
+import lombok.Data;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Primary;
+
 @ConfigurationProperties(prefix = "ca")
 @Data
 @Primary
 public class CAConfiguration {
 
-    private String csvFilePath;
+	private String csvFilePath;
 
-    private List<String> accountsLabel;
+	private List<String> accountsLabel;
 
 }

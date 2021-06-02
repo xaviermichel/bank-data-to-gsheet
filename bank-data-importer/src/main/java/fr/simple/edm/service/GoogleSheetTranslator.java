@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import fr.simple.edm.GoogleSheetImporterConfiguration;
+import fr.simple.edm.config.GoogleSheetImporterConfiguration;
 import fr.simple.edm.domain.AccountOperation;
 import fr.simple.edm.service.exception.SheetNotExistsException;
 import lombok.extern.slf4j.Slf4j;
@@ -62,12 +62,16 @@ public class GoogleSheetTranslator {
 
 		googleSheetUtils.writeValues(googleSheetImporterConfiguration.getSpreadsheetId(), googleSheetImporterConfiguration.getSmartInsertSheet().getRange(), values);
 
+		log.info("Start of filling auto categorisation");
+
 		googleSheetUtils.executeCopyPasteRequest(
 				googleSheetImporterConfiguration.getSpreadsheetId(),
 				googleSheetImporterConfiguration.getSmartInsertSheetFormulaSource(),
 				googleSheetImporterConfiguration.getSmartInsertSheetFormulaDestination(),
 				"PASTE_FORMULA"
 		);
+
+		log.info("Start of copying to next month sheet");
 
 		googleSheetUtils.executeCopyPasteRequest(
 				googleSheetImporterConfiguration.getSpreadsheetId(),

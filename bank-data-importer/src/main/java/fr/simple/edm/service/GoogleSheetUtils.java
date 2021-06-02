@@ -6,11 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.http.javanet.NetHttpTransport;
-import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.model.BatchUpdateSpreadsheetRequest;
 import com.google.api.services.sheets.v4.model.BatchUpdateSpreadsheetResponse;
@@ -21,7 +18,9 @@ import com.google.api.services.sheets.v4.model.GridRange;
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.api.services.sheets.v4.model.UpdateValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
-import fr.simple.edm.GoogleSheetImporterConfiguration;
+import com.google.auth.http.HttpCredentialsAdapter;
+import com.google.auth.oauth2.GoogleCredentials;
+import fr.simple.edm.config.GoogleSheetImporterConfiguration;
 import fr.simple.edm.service.exception.SheetNotExistsException;
 import lombok.extern.slf4j.Slf4j;
 
@@ -35,16 +34,18 @@ public class GoogleSheetUtils {
 	private Sheets service;
 
 	@Autowired
-	public GoogleSheetUtils(GoogleCredential googleCredential, JacksonFactory jacksonFactory) throws GeneralSecurityException, IOException {
-		final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-		service = new Sheets.Builder(HTTP_TRANSPORT, jacksonFactory, googleCredential).build();
+	public GoogleSheetUtils(GoogleCredentials googleCredentials) throws GeneralSecurityException, IOException {
+		service = new Sheets.Builder(
+				GoogleNetHttpTransport.newTrustedTransport(),
+				GsonFactory.getDefaultInstance(),
+				new HttpCredentialsAdapter(googleCredentials)
+		).build();
 	}
 
 	public void clearRange(String spreadsheetId, String range) throws IOException {
 		ClearValuesRequest requestBody = new ClearValuesRequest();
 		Sheets.Spreadsheets.Values.Clear request = service.spreadsheets().values().clear(spreadsheetId, range, requestBody);
 		ClearValuesResponse response = request.execute();
-
 		log.info("Sheet have been cleared : {}", response);
 	}
 
