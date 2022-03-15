@@ -24,7 +24,7 @@ google:
             firstCol: A
             firstRow: 7
             lastCol: F
-            lastRow: 100
+            lastRow: 1000
         smartInsertSheetFormulaSource:
             name: Insertions intelligentes
             firstCol: 5
@@ -36,22 +36,22 @@ google:
             firstCol: 5
             firstRow: 6
             lastCol: 5
-            lastRow: 100
+            lastRow: 1000
         smartInsertSheetFullRangeCopy:
             name: Insertions intelligentes
             firstCol: 0
             firstRow: 6
             lastCol: 5
-            lastRow: 100
+            lastRow: 1000
         nextMonthSheet:
             name: Mois suivant
             firstCol: A
             firstRow: 21
             lastCol: F
-            lastRow: 100
+            lastRow: 1000
         nextMonthSheetPaste:
             name: Mois suivant
             firstCol: 0
             firstRow: 20
             lastCol: 5
-            lastRow: 100
+            lastRow: 1000

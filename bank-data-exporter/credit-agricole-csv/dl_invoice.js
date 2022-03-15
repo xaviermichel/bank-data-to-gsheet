@@ -18,7 +18,7 @@ log.info(`Getting data for user ${caUser}`);
 (async () => {
 
     const browser = await puppeteer.launch({
-        //executablePath: '/usr/bin/chromium-browser',
+        executablePath: '/usr/bin/chromium-browser',
         headless: true,
         slowMo: 250
     });
@@ -50,7 +50,7 @@ log.info(`Getting data for user ${caUser}`);
     await page.waitForNavigation();
 
     // popin vie privee
-    await pupeeteerUtils.clickByText(page, 'Tout accepter', 'button');
+    //await pupeeteerUtils.clickByText(page, 'Tout accepter', 'button');
     await page.waitFor(1000);
 
     log.info("Going on téléchargement page");
