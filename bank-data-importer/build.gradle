@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.6.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'org.springframework.experimental.aot' version '0.11.3' apply false
+}
+
+group = 'org.springframework.boot'
+version = '0.0.1-SNAPSHOT'
+java.sourceCompatibility = JavaVersion.VERSION_11
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    maven { url 'https://repo.spring.io/release' }
+    mavenCentral()
+}
+
+ext {
+    buildNativeImage = ! "false".equalsIgnoreCase(System.getenv('NATIVE_IMAGE'))
+}
+
+if (buildNativeImage) {
+    println "[plugins] Applying AOT plugin"
+    apply plugin: "org.springframework.experimental.aot"
+} else {
+    println "[plugins] NOT applying AOT plugin"
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.apache.commons:commons-lang3'
+
+    implementation 'com.google.auth:google-auth-library-oauth2-http:0.26.0'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20220221-1.32.1'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootBuildImage {
+    imageName   = "xaviermichel/${project.name}:latest"
+    if (! buildNativeImage) {
+        builder     = 'paketobuildpacks/builder:base'
+    } else {
+        builder = 'paketobuildpacks/builder:tiny'
+        environment = [
+                'BP_NATIVE_IMAGE'                : 'true',
+                'BP_NATIVE_IMAGE_BUILD_ARGUMENTS': '-H:+AddAllCharsets --enable-https'
+        ]
+    }
+}
+
