@@ -50,7 +50,8 @@ log.info(`Getting data for user ${caUser}`);
     await page.waitForNavigation();
 
     // popin vie privee
-    //await pupeeteerUtils.clickByText(page, 'Tout accepter', 'button');
+    await page.waitFor(1000);
+    await pupeeteerUtils.clickByText(page, 'Accepter et fermer', 'button');
     await page.waitFor(1000);
 
     log.info("Going on téléchargement page");
@@ -62,6 +63,8 @@ log.info(`Getting data for user ${caUser}`);
 
     log.info("Choosing CSV format");
     await page.click('button[data-id=input1]'); // open select
+    //await page.waitFor(1000);
+    //await pupeeteerUtils.clickByText(page, 'XLSX (Excel)', 'span');
     await page.waitFor(1000);
     await pupeeteerUtils.clickByText(page, 'CSV', 'span');
 
