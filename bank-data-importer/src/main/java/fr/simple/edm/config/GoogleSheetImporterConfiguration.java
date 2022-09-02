@@ -18,6 +18,8 @@ public class GoogleSheetImporterConfiguration {
     private Sheet smartInsertSheetFullRangeCopy;
     private Sheet nextMonthSheetPaste;
 
+    private String nextMontSheetName; // will create next month sheet with the given name
+
     @Data
     public static class Sheet {
         private String name;
@@ -31,3 +33,4 @@ public class GoogleSheetImporterConfiguration {
         }
     }
 }
+

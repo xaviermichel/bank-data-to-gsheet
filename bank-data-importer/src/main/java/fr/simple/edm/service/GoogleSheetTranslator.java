@@ -1,5 +1,6 @@
 package fr.simple.edm.service;
 
+import fr.simple.edm.exception.SheetExistsException;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
@@ -11,9 +12,9 @@ import fr.simple.edm.domain.AccountOperation;
 import fr.simple.edm.service.exception.SheetNotExistsException;
 import lombok.extern.slf4j.Slf4j;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 @Slf4j
 @Service
@@ -30,7 +31,7 @@ public class GoogleSheetTranslator {
 	}
 
 	private Object emptyIfNull(Object o) {
-		if (StringUtils.isEmpty(o)) {
+		if (org.springframework.util.StringUtils.isEmpty(o)) {
 			return "";
 		}
 		return o;
@@ -44,7 +45,8 @@ public class GoogleSheetTranslator {
 	}
 
 
-	public void reloadData(List<AccountOperation> operations) throws IOException, GeneralSecurityException, SheetNotExistsException {
+	public void reloadData(List<AccountOperation> operations)
+			throws IOException, GeneralSecurityException, SheetNotExistsException, SheetExistsException {
 		log.info("Start of reloadData");
 
 		// construct request
@@ -80,7 +82,17 @@ public class GoogleSheetTranslator {
 				"PASTE_VALUES"
 		);
 
+		if (StringUtils.isNotEmpty(googleSheetImporterConfiguration.getNextMontSheetName())) {
+		    log.info("Start of duplicate next month model to real next month");
+			boolean alreadyExists = googleSheetUtils.sheetExists(googleSheetImporterConfiguration.getSpreadsheetId(), googleSheetImporterConfiguration.getNextMontSheetName());
+			if (alreadyExists) {
+				throw new SheetExistsException("will not create next month sheet because it already exists : " + googleSheetImporterConfiguration.getNextMontSheetName());
+			}
+			googleSheetUtils.duplicateSheet(googleSheetImporterConfiguration.getSpreadsheetId(), googleSheetImporterConfiguration.getNextMonthSheetPaste(), googleSheetImporterConfiguration.getNextMontSheetName());
+		}
+
 		log.info("End of reloadData");
 	}
 
 }
+

@@ -1,8 +1,8 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.6.4'
+    id 'org.springframework.boot' version '2.7.1'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'org.springframework.experimental.aot' version '0.11.3' apply false
+    id 'org.springframework.experimental.aot' version '0.12.1' apply false
 }
 
 group = 'org.springframework.boot'
@@ -39,8 +39,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.apache.commons:commons-lang3'
 
-    implementation 'com.google.auth:google-auth-library-oauth2-http:0.26.0'
-    implementation 'com.google.apis:google-api-services-sheets:v4-rev20220221-1.32.1'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.10.0'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20220620-2.0.0'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -57,4 +57,5 @@ bootBuildImage {
         ]
     }
 }
+
 
