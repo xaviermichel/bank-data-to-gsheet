@@ -9,28 +9,41 @@ import org.springframework.stereotype.Component;
 @Data
 public class GoogleSheetImporterConfiguration {
 
-    private String credentialsFilePath;
-    private String spreadsheetId;
-    private Sheet smartInsertSheet;
-    private Sheet nextMonthSheet;
-    private Sheet smartInsertSheetFormulaSource;
-    private Sheet smartInsertSheetFormulaDestination;
-    private Sheet smartInsertSheetFullRangeCopy;
-    private Sheet nextMonthSheetPaste;
+	private String credentialsFilePath;
 
-    private String nextMontSheetName; // will create next month sheet with the given name
+	private String spreadsheetId;
 
-    @Data
-    public static class Sheet {
-        private String name;
-        private String firstRow;
-        private String lastRow;
-        private String firstCol;
-        private String lastCol;
+	private Sheet smartInsertSheet;
 
-        public String getRange() {
-            return  name + "!" + firstCol + firstRow + ":" + lastCol + lastRow;
-        }
-    }
+	private Sheet nextMonthSheet;
+
+	private Sheet smartInsertSheetFormulaSource;
+
+	private Sheet smartInsertSheetFormulaDestination;
+
+	private Sheet smartInsertSheetFullRangeCopy;
+
+	private Sheet nextMonthSheetPaste;
+
+	private String nextMontSheetName; // will create next month sheet with the given name
+
+	@Data
+	public static class Sheet {
+
+		private String name;
+
+		private String firstRow;
+
+		private String lastRow;
+
+		private String firstCol;
+
+		private String lastCol;
+
+		public String getRange() {
+			return name + "!" + firstCol + firstRow + ":" + lastCol + lastRow;
+		}
+
+	}
+
 }
-

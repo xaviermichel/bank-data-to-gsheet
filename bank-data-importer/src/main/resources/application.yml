@@ -1,57 +1,57 @@
 
 spring:
-    main:
-        web-application-type: NONE
+  main:
+    web-application-type: NONE
 
 logging:
-    level:
-        fr.simple.edm: INFO
+  level:
+    fr.simple.edm: INFO
 
 ca:
-    csvFilePath: /data/export.CSV
-    accountsLabel:
-        - Compte personnel
-        - Compte commun
+  csvFilePath: /data/export.CSV
+  accountsLabel:
+    - Compte personnel
+    - Compte commun
 
 google:
-    sheet:
-        appName: Account Importer
-        credentialsFilePath: /conf/credentials.json
-        tokenDirectoryPath: /tmp/tokens
-        spreadsheetId: xxxxx-xxxxxxxxxx-xxxxxxx
-        smartInsertSheet:
-            name: Insertions intelligentes
-            firstCol: A
-            firstRow: 7
-            lastCol: F
-            lastRow: 1000
-        smartInsertSheetFormulaSource:
-            name: Insertions intelligentes
-            firstCol: 5
-            firstRow: 4
-            lastCol: 5
-            lastRow: 4
-        smartInsertSheetFormulaDestination:
-            name: Insertions intelligentes
-            firstCol: 5
-            firstRow: 6
-            lastCol: 5
-            lastRow: 1000
-        smartInsertSheetFullRangeCopy:
-            name: Insertions intelligentes
-            firstCol: 0
-            firstRow: 6
-            lastCol: 5
-            lastRow: 1000
-        nextMonthSheet:
-            name: Mois suivant
-            firstCol: A
-            firstRow: 21
-            lastCol: F
-            lastRow: 1000
-        nextMonthSheetPaste:
-            name: Mois suivant
-            firstCol: 0
-            firstRow: 20
-            lastCol: 5
-            lastRow: 1000
+  sheet:
+    appName: Account Importer
+    credentialsFilePath: /conf/credentials.json
+    tokenDirectoryPath: /tmp/tokens
+    spreadsheetId: xxxxx-xxxxxxxxxx-xxxxxxx
+    smartInsertSheet:
+      name: Insertions intelligentes
+      firstCol: A
+      firstRow: 7
+      lastCol: F
+      lastRow: 1000
+    smartInsertSheetFormulaSource:
+      name: Insertions intelligentes
+      firstCol: 5
+      firstRow: 4
+      lastCol: 5
+      lastRow: 4
+    smartInsertSheetFormulaDestination:
+      name: Insertions intelligentes
+      firstCol: 5
+      firstRow: 6
+      lastCol: 5
+      lastRow: 1000
+    smartInsertSheetFullRangeCopy:
+      name: Insertions intelligentes
+      firstCol: 0
+      firstRow: 6
+      lastCol: 5
+      lastRow: 1000
+    nextMonthSheet:
+      name: Mois suivant
+      firstCol: A
+      firstRow: 21
+      lastCol: F
+      lastRow: 1000
+    nextMonthSheetPaste:
+      name: Mois suivant
+      firstCol: 0
+      firstRow: 20
+      lastCol: 5
+      lastRow: 1000

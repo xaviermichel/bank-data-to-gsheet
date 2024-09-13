@@ -1,13 +1,13 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.7.1'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'org.springframework.experimental.aot' version '0.12.1' apply false
+    id 'checkstyle'
+    id 'org.springframework.boot' version '3.3.3'
+    id 'io.spring.dependency-management' version '1.1.6'
 }
 
-group = 'org.springframework.boot'
+group = 'io.xmichel'
 version = '0.0.1-SNAPSHOT'
-java.sourceCompatibility = JavaVersion.VERSION_11
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 configurations {
     compileOnly {
@@ -20,16 +20,7 @@ repositories {
     mavenCentral()
 }
 
-ext {
-    buildNativeImage = ! "false".equalsIgnoreCase(System.getenv('NATIVE_IMAGE'))
-}
-
-if (buildNativeImage) {
-    println "[plugins] Applying AOT plugin"
-    apply plugin: "org.springframework.experimental.aot"
-} else {
-    println "[plugins] NOT applying AOT plugin"
-}
+apply plugin: 'io.spring.javaformat'
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
@@ -39,23 +30,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.apache.commons:commons-lang3'
 
-    implementation 'com.google.auth:google-auth-library-oauth2-http:1.10.0'
-    implementation 'com.google.apis:google-api-services-sheets:v4-rev20220620-2.0.0'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.25.0'
+    implementation 'com.google.apis:google-api-services-sheets:v4-rev20240826-2.0.0'
 }
-
-bootBuildImage {
-    imageName   = "xaviermichel/${project.name}:latest"
-    if (! buildNativeImage) {
-        builder     = 'paketobuildpacks/builder:base'
-    } else {
-        builder = 'paketobuildpacks/builder:tiny'
-        environment = [
-                'BP_NATIVE_IMAGE'                : 'true',
-                'BP_NATIVE_IMAGE_BUILD_ARGUMENTS': '-H:+AddAllCharsets --enable-https'
-        ]
-    }
-}
-
-

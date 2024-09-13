@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface BankDataTranslator {
 
-    List<AccountOperation> fileToAccountOperations(String file) throws Exception;
+	List<AccountOperation> fileToAccountOperations(String file) throws Exception;
 
 }

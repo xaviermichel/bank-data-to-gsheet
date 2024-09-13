@@ -1,4 +1,6 @@
 application-local.yml
+*.csv
+service-account.json
 
 .gradle
 build/
