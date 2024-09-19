@@ -1,4 +1,4 @@
-package fr.simple.edm.service.exception;
+package fr.simple.edm.exception;
 
 public class SheetNotExistsException extends Exception {
 

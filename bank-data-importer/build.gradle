@@ -16,11 +16,12 @@ configurations {
 }
 
 repositories {
-    maven { url 'https://repo.spring.io/release' }
     mavenCentral()
+    maven { url 'https://repo.spring.io/release' }
 }
 
 apply plugin: 'io.spring.javaformat'
+
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'

@@ -8,7 +8,7 @@ import com.google.auth.http.HttpCredentialsAdapter;
 import com.google.auth.oauth2.GoogleCredentials;
 import fr.simple.edm.config.GoogleSheetImporterConfiguration;
 import fr.simple.edm.config.GoogleSheetImporterConfiguration.Sheet;
-import fr.simple.edm.service.exception.SheetNotExistsException;
+import fr.simple.edm.exception.SheetNotExistsException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ import java.util.Optional;
 @Slf4j
 public class GoogleSheetUtils {
 
-	private Sheets service;
+	private final Sheets service;
 
 	public GoogleSheetUtils(GoogleCredentials googleCredentials) throws GeneralSecurityException, IOException {
 		service = new Sheets.Builder(GoogleNetHttpTransport.newTrustedTransport(), GsonFactory.getDefaultInstance(),
@@ -74,16 +74,16 @@ public class GoogleSheetUtils {
 		CopyPasteRequest extendFormula = new CopyPasteRequest();
 		extendFormula.setSource(
 				new GridRange().setSheetId(getSheetByName(spreadsheetId, source.getName()).getProperties().getSheetId())
-					.setStartRowIndex(Integer.valueOf(source.getFirstRow()))
-					.setEndRowIndex(Integer.valueOf(source.getLastRow()) + 1)
-					.setStartColumnIndex(Integer.valueOf(source.getFirstCol()))
-					.setEndColumnIndex(Integer.valueOf(source.getLastCol()) + 1));
+					.setStartRowIndex(source.getFirstRow())
+					.setEndRowIndex(source.getLastRow() + 1)
+					.setStartColumnIndex(source.getFirstColIndex())
+					.setEndColumnIndex(source.getLastColIndex() + 1));
 		extendFormula.setDestination(new GridRange()
 			.setSheetId(getSheetByName(spreadsheetId, destination.getName()).getProperties().getSheetId())
-			.setStartRowIndex(Integer.valueOf(destination.getFirstRow()))
-			.setEndRowIndex(Integer.valueOf(destination.getLastRow()) + 1)
-			.setStartColumnIndex(Integer.valueOf(destination.getFirstCol()))
-			.setEndColumnIndex(Integer.valueOf(destination.getLastCol()) + 1));
+			.setStartRowIndex(destination.getFirstRow())
+			.setEndRowIndex(destination.getLastRow() + 1)
+			.setStartColumnIndex(destination.getFirstColIndex())
+			.setEndColumnIndex(destination.getLastColIndex() + 1));
 		extendFormula.setPasteType(pasteType);
 
 		List<Request> requests = new ArrayList<>();
@@ -97,6 +97,16 @@ public class GoogleSheetUtils {
 		BatchUpdateSpreadsheetResponse updatingResponse = updatingRequest.execute();
 
 		log.info("Data have been updated : {}", updatingResponse);
+	}
+
+	public List<List<Object>> getRange(String spreadsheetId, GoogleSheetImporterConfiguration.Sheet sheet)
+			throws IOException {
+		ValueRange response = service.spreadsheets().values().get(spreadsheetId, sheet.getRange()).execute();
+		List<List<Object>> values = response.getValues();
+		if (values == null) {
+			return List.of();
+		}
+		return values;
 	}
 
 	public boolean sheetExists(String spreadsheetId, String sheetName) throws IOException {

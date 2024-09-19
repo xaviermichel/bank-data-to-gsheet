@@ -3,13 +3,12 @@ package fr.simple.edm.service;
 import fr.simple.edm.config.GoogleSheetImporterConfiguration;
 import fr.simple.edm.domain.AccountOperation;
 import fr.simple.edm.exception.SheetExistsException;
-import fr.simple.edm.service.exception.SheetNotExistsException;
+import fr.simple.edm.exception.SheetNotExistsException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -46,8 +45,8 @@ public class GoogleSheetTranslator {
 		log.info("End of clear");
 	}
 
-	public void reloadData(List<AccountOperation> operations)
-			throws IOException, SheetNotExistsException, SheetExistsException {
+	public void loadDataToSmartInsertSheet(List<AccountOperation> operations)
+			throws IOException, SheetNotExistsException {
 		log.info("Start of reloadData");
 
 		// construct request
@@ -65,13 +64,16 @@ public class GoogleSheetTranslator {
 		log.info("Start of filling auto categorisation");
 
 		googleSheetUtils.executeCopyPasteRequest(googleSheetImporterConfiguration.getSpreadsheetId(),
-				googleSheetImporterConfiguration.getSmartInsertSheetFormulaSource(),
-				googleSheetImporterConfiguration.getSmartInsertSheetFormulaDestination(), "PASTE_FORMULA");
+				googleSheetImporterConfiguration.getSmartInsertGuesserFormulaSource(),
+				googleSheetImporterConfiguration.getSmartInsertGuesserFormulaDestination(), "PASTE_FORMULA");
+	}
+
+	public void loadDataToNextMonthSheet() throws IOException, SheetNotExistsException, SheetExistsException {
 
 		log.info("Start of copying to next month sheet");
 
 		googleSheetUtils.executeCopyPasteRequest(googleSheetImporterConfiguration.getSpreadsheetId(),
-				googleSheetImporterConfiguration.getSmartInsertSheetFullRangeCopy(),
+				googleSheetImporterConfiguration.getSmartInsertSheetOutputRange(),
 				googleSheetImporterConfiguration.getNextMonthSheetPaste(), "PASTE_VALUES");
 
 		if (StringUtils.isNotEmpty(googleSheetImporterConfiguration.getNextMontSheetName())) {

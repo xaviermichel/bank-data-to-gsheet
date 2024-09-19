@@ -1,5 +1,6 @@
 package fr.simple.edm.config;
 
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -17,31 +18,37 @@ public class GoogleSheetImporterConfiguration {
 
 	private Sheet nextMonthSheet;
 
-	private Sheet smartInsertSheetFormulaSource;
+	private Sheet smartInsertGuesserFormulaSource;
 
-	private Sheet smartInsertSheetFormulaDestination;
+	private Sheet smartInsertGuesserFormulaDestination;
 
-	private Sheet smartInsertSheetFullRangeCopy;
+	private Sheet smartInsertSheetOutputRange;
 
 	private Sheet nextMonthSheetPaste;
 
 	private String nextMontSheetName; // will create next month sheet with the given name
 
 	@Data
+	@Builder
 	public static class Sheet {
 
 		private String name;
 
-		private String firstRow;
+		private Integer firstRow;
 
-		private String lastRow;
+		private Integer lastRow;
 
-		private String firstCol;
+		private Integer firstColIndex;
 
-		private String lastCol;
+		private Integer lastColIndex;
+
+		private char getCharFromAlphabetPosition(Integer position) {
+			return (char) ('A' + position);
+		}
 
 		public String getRange() {
-			return name + "!" + firstCol + firstRow + ":" + lastCol + lastRow;
+			return name + "!" + getCharFromAlphabetPosition(firstColIndex) + firstRow + ":"
+					+ getCharFromAlphabetPosition(lastColIndex) + lastRow;
 		}
 
 	}

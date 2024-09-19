@@ -1,4 +1,4 @@
-package fr.simple.edm.service;
+package fr.simple.edm.service.csvreader;
 
 import fr.simple.edm.domain.AccountOperation;
 

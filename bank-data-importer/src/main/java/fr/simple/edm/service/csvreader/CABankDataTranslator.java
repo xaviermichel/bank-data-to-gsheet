@@ -1,4 +1,4 @@
-package fr.simple.edm.service;
+package fr.simple.edm.service.csvreader;
 
 import fr.simple.edm.config.CAConfiguration;
 import fr.simple.edm.domain.AccountOperation;
@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 @Service
 public class CABankDataTranslator implements BankDataTranslator {
 
-	private CAConfiguration caConfiguration;
+	private final CAConfiguration caConfiguration;
 
 	Pattern newTransactionLinePattern = Pattern.compile("^\\d{2}/\\d{2}/\\d{4};");
 
