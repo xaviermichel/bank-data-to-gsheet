@@ -15,7 +15,7 @@ async function clickByText(page, text, selectorName = "a", index = 0, hideLogTex
     } else {
         console.log(`Looking for $x("//${selectorName}[contains(text(), ${escapedText})] #${index}")`);
     }
-    const linkHandlers = await page.$x(`//${selectorName}[contains(text(), ${escapedText})]`);
+    const linkHandlers = await page.$$(`xpath/.//${selectorName}[contains(text(), ${escapedText})]`);
     if (index === -1) {
         index = linkHandlers.length - 1;
     }
@@ -25,7 +25,7 @@ async function clickByText(page, text, selectorName = "a", index = 0, hideLogTex
 async function hoverByText(page, text, selectorName = "a", index = 0) {
     const escapedText = await escapeXpathString(text);
     console.log(`Looking for $x("//${selectorName}[contains(text(), ${escapedText})] #${index}")`);
-    const linkHandlers = await page.$x(`//${selectorName}[contains(text(), ${escapedText})]`);
+    const linkHandlers = await page.$$(`xpath/.//${selectorName}[contains(text(), ${escapedText})]`);
     if (index === -1) {
         index = linkHandlers.length - 1;
     }

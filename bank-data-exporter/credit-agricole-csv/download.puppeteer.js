@@ -1,15 +1,13 @@
-const expect = require('expect-puppeteer');
-const { setDefaultOptions } = require('expect-puppeteer');
-setDefaultOptions({ timeout: 5000 });
 const fs = require('fs');
 const path = require('path');
+const { setTimeout } = require('node:timers/promises');
 
 async function waitForFileToDownload(downloadPath) {
     console.log('Waiting to download file...');
     let filename;
     while (!filename || filename.endsWith('.crdownload')) {
         filename = fs.readdirSync(downloadPath)[0];
-        await new Promise(resolve => setTimeout(resolve, 500));
+        await setTimeout(2000);
     }
     return filename;
 }
@@ -17,8 +15,9 @@ async function waitForFileToDownload(downloadPath) {
 async function download(page, selector) {
     const downloadPath = path.resolve(__dirname, 'data');
     console.log(`Downloading file to : ${downloadPath}`);
-    await page._client.send('Page.setDownloadBehavior', { behavior: 'allow', downloadPath: downloadPath });
-    await expect(page).toClick(selector);
+    await page._client().send('Page.setDownloadBehavior', { behavior: 'allow', downloadPath: downloadPath });
+    await setTimeout(5000);
+    await page.click(selector);
     let filename = await waitForFileToDownload(downloadPath);
     return path.resolve(downloadPath, filename);
 }

@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const pupeeteerUtils = require('../commons.puppeteer');
 const pupeeteerDownloadUtils = require('./download.puppeteer');
 const log = require('./logger').logger;
+const { setTimeout } = require('node:timers/promises');
 
 if (process.argv.length <= 5) {
     log.error("Usage: " + __filename + " ca_user ca_pass");
@@ -27,6 +28,8 @@ log.info(`Getting data for user ${caUser}`);
         width: 1920,
         height: 800
     });
+    page.setDefaultTimeout(10000);
+    page.setDefaultNavigationTimeout(10000);
 
     log.info("Going to CA website");
     await page.goto('https://www.credit-agricole.fr/ca-franchecomte/particulier/acceder-a-mes-comptes.html');
@@ -43,16 +46,16 @@ log.info(`Getting data for user ${caUser}`);
         }
     }
 
-    await page.waitFor(1000);
+    await setTimeout(1000);
     await fillPasswordGrid(caPass.split(''));
     await page.click('#validation');
 
     await page.waitForNavigation();
 
     // popin vie privee
-    await page.waitFor(1000);
+    await setTimeout(1000);
     await pupeeteerUtils.clickByText(page, 'Accepter et fermer', 'button');
-    await page.waitFor(1000);
+    await setTimeout(1000);
 
     log.info("Going on téléchargement page");
     await page.goto('https://www.credit-agricole.fr/ca-franchecomte/particulier/operations/operations-courantes/telechargement.html#!/');
@@ -65,7 +68,7 @@ log.info(`Getting data for user ${caUser}`);
     await page.click('button[data-id=input1]'); // open select
     //await page.waitFor(1000);
     //await pupeeteerUtils.clickByText(page, 'XLSX (Excel)', 'span');
-    await page.waitFor(1000);
+    await setTimeout(1000);
     await pupeeteerUtils.clickByText(page, 'CSV', 'span');
 
     log.info("Choosing custom period");
